@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Omerpotashnik">
         <activity
+            android:name=".Mainactivity2"
+            android:exported="false" />
+        <activity
             android:name=".SharedPreferencesActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,11 +25,10 @@
         </activity>
         <activity
             android:name=".DynamicActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>
