@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F8F9FA" android:id="@+id/main">
+<!--  רקע בהיר ונקי לכל המסך  -->
+<!--  אזור הכותרת (Header)  -->
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="24dp" android:paddingBottom="16dp" android:paddingStart="20dp" android:paddingEnd="20dp" android:background="#FFFFFF">
+    <!--  רקע לבן מופרד לכותרת  -->
+    <TextView android:id="@+id/txtHeaderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="גיליון ציונים" android:textColor="#1A1A1A" android:textSize="28sp" android:textStyle="bold" android:letterSpacing="-0.02"/>
+    <TextView android:id="@+id/txtHeaderSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="רשימת המבחנים וההישגים שלך" android:textColor="#757575" android:textSize="14sp" android:layout_marginTop="4dp"/>
+</LinearLayout>
+<!--  קו הפרדה דק ואלגנטי בין הכותרת לרשימה  -->
+<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0"/>
+<!--  ה-ListView עם ה-Padding המבוקש  -->
+<ListView android:id="@+id/listViewExams" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:clipToPadding="false" android:scrollbarStyle="outsideOverlay" android:divider="@android:color/transparent" android:dividerHeight="10dp"/>
+</LinearLayout>
